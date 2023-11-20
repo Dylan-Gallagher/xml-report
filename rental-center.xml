@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!DOCTYPE rentalCenterDB [
+<!ELEMENT rentalCenterDB (rentalCenter*)>
+<!ELEMENT rentalCenter (full, workingTime, email, Stock, Address)>
+
+<!ELEMENT full (#PCDATA)>
+
+<!ELEMENT workingTime (openingTime, closingTime)>
+<!ELEMENT openingTime (hour, minute)>
+<!ELEMENT closingTime (hour, minute)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT minute (#PCDATA)>
+
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT Stock (capacity, spaceLeft)>
+<!ELEMENT capacity (#PCDATA)>
+<!ELEMENT spaceLeft (#PCDATA)>
+
+<!ELEMENT Address (street, city, county?, country, postalCode)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT county (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT postalCode (#PCDATA)>
+
+<!ATTLIST rentalCenter id CDATA #REQUIRED>
+]>
+
+<rentalCenterDB>
+    <rentalCenter id="BaggotStreet">
+        <full>False</full>
+        <workingTime>
+            <openingTime>
+                <hour>9</hour>
+                <minute>00</minute>
+            </openingTime>
+            <closingTime>
+                <hour>19</hour>
+                <minute>30</minute>
+            </closingTime>
+        </workingTime>
+        <email>baggotstreet@hertz.com</email>
+        <Stock>
+            <capacity>150</capacity>
+            <spaceLeft>72</spaceLeft>
+        </Stock>
+        <Address>
+            <street>2 Haddington Rd</street>
+            <city>Dublin</city>
+            <county>Dublin</county>
+            <country>Ireland</country>
+            <postalCode>D04YY05</postalCode>
+        </Address>
+    </rentalCenter>
+    <rentalCenter id="StPancras">
+        <full>True</full>
+        <workingTime>
+            <openingTime>
+                <hour>9</hour>
+                <minute>00</minute>
+            </openingTime>
+            <closingTime>
+                <hour>22</hour>
+                <minute>30</minute>
+            </closingTime>
+        </workingTime>
+        <email>stpancras@hertz.com</email>
+        <Stock>
+            <capacity>200</capacity>
+            <spaceLeft>0</spaceLeft>
+        </Stock>
+        <Address>
+            <street>St Pancras Way</street>
+            <city>London</city>
+            <country>England</country>
+            <postalCode>N1C4QP</postalCode>
+        </Address>
+    </rentalCenter>
+    <rentalCenter id="GareDuNord">
+        <full>False</full>
+        <workingTime>
+            <openingTime>
+                <hour>8</hour>
+                <minute>00</minute>
+            </openingTime>
+            <closingTime>
+                <hour>16</hour>
+                <minute>00</minute>
+            </closingTime>
+        </workingTime>
+        <email>garedunord@hertz.com</email>
+        <Stock>
+            <capacity>100</capacity>
+            <spaceLeft>14</spaceLeft>
+        </Stock>
+        <Address>
+            <street>112 Rue de Maubeuge</street>
+            <city>Paris</city>
+            <country>France</country>
+            <postalCode>75010</postalCode>
+        </Address>
+    </rentalCenter>
+</rentalCenterDB>
