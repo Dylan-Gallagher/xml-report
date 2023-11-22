@@ -32,8 +32,8 @@
         <full>False</full>
         <workingTime>
             <openingTime>
-                <hour>9</hour>
-                <minute>00</minute>
+                <hour>8</hour>
+                <minute>30</minute>
             </openingTime>
             <closingTime>
                 <hour>19</hour>
@@ -67,7 +67,7 @@
         </workingTime>
         <email>stpancras@hertz.com</email>
         <Stock>
-            <capacity>200</capacity>
+            <capacity>210</capacity>
             <spaceLeft>0</spaceLeft>
         </Stock>
         <Address>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Cars [ <!ELEMENT Cars (Car)*>
+<!ELEMENT Car (VIN ,Type, Brand, Model, Year, Mileage, Transmission, Price, Reserved)>
+<!ELEMENT VIN (#PCDATA)>
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT Brand (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Mileage (#PCDATA)>
+<!ELEMENT Transmission (#PCDATA)>
+<!ELEMENT Reserved (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+
+<!ATTLIST Employee Employee_Number CDATA #REQUIRED>
+]>
+
+<Cars> 
+    <Car >
+        <VIN>3C4PDCAB1ET168244</VIN>
+        <Type>SUV</Type>
+        <Brand>Toyota</Brand>
+        <Model>Rav4</Model>
+        <Year>2019</Year>
+        <Mileage>50234</Mileage>
+        <Transmission>automatic</Transmission>
+        <Price>50</Price>
+        <Reserved>false</Reserved>
+    </Car>
+    <Car>
+        <VIN>1GHDT13W6Y2309402</VIN>
+        <Type>Sedan</Type>
+        <Brand>Chery</Brand>
+        <Model>Arrizo 8</Model>
+        <Year>2023</Year>
+        <Mileage>9009</Mileage>
+        <Transmission>automatic</Transmission>
+        <Price>43</Price>
+        <Reserved>false</Reserved>
+    </Car>
+    <Car>
+        <VIN>JF1GG68564H800943</VIN>
+        <Type>SUV</Type>
+        <Brand>Land Rover</Brand>
+        <Model>Range Rover Sport</Model>
+        <Year>2019</Year>
+        <Mileage>23444</Mileage>
+        <Transmission>automatic</Transmission>
+        <Price>77</Price>
+        <Reserved>false</Reserved>
+    </Car>
+
+    <Car> 
+        <VIN>5TDZA23C34S061366</VIN>
+        <Type>Hatchback</Type>
+        <Brand>Volkswagen</Brand>
+        <Model>Golf</Model>
+        <Year>2003</Year>
+        <Mileage>246769</Mileage>
+        <Transmission>manual</Transmission>
+        <Price>50</Price>
+        <Reserved>false</Reserved> 
+    </Car>
+    <Car> 
+        <VIN>1LNHM84W03Y636990</VIN>
+        <Type>Ð¡abriolet</Type>
+        <Brand>Mercedes-Benz</Brand>
+        <Model>SL</Model>
+        <Year>2008</Year>
+        <Mileage>23 713</Mileage>
+        <Transmission>automatic</Transmission>
+        <Price>102</Price>
+        <Reserved>true</Reserved>
+    </Car>
+
+
+</Cars>

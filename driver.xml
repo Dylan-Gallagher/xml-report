@@ -1,0 +1,34 @@
+<!DOCTYPE Driver [
+    <!ELEMENT Driver (Driver_Registration*)>
+    <!ELEMENT Driver_Registration (name, contactInfo, age)>
+    <!ATTLIST Driver_Registration ID CDATA #REQUIRED>
+    <!ATTLIST Driver_Registration isVerified (Y|N) #REQUIRED>
+    <!ATTLIST Driver_Registration gender (M|F|other) #IMPLIED>
+
+    
+    <!ELEMENT name (title?, firstname, surname)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT firstname (#PCDATA)>
+    <!ELEMENT surname (#PCDATA)>
+
+    <!ELEMENT contactInfo (PhoneNo, email)>
+    <!ELEMENT PhoneNo (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+
+    <!ELEMENT age (#PCDATA)>
+]>
+
+<Driver>
+    <Driver_Registration ID="22337295" isVerified="Y">
+        <name>
+            <title>Mr</title>
+            <firstname>John</firstname>
+            <surname>Smith</surname>
+        </name>
+        <contactInfo>
+            <PhoneNo>875635573</PhoneNo>
+            <email>jsmith@gmail.com</email>
+        </contactInfo>
+        <age>33</age>
+    </Driver_Registration>
+</Driver>

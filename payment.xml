@@ -1,0 +1,17 @@
+<!DOCTYPE Payment [
+    <!ELEMENT Payment (card, cardholder)>
+    <!ATTLIST cardholder image CDATA #REQUIRED>
+    <!ATTLIST cardholder thirdPartyPaymentSuccess (True|False) #REQUIRED>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT cardholder (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+]>
+
+<Payment>
+    <card image="bGlnaHQgdw==" thirdPartyPaymentSuccess="True"/>
+    <cardholder>
+        <name>bGlnaHQgdw==</name>
+        <address>1 Grafton Street, Dublin 2</address>
+    </cardholder>
+</Payment>
