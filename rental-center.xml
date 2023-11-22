@@ -101,4 +101,79 @@
             <postalCode>75010</postalCode>
         </Address>
     </rentalCenter>
+    <rentalCenter id="CorkCity">
+        <full>False</full>
+        <workingTime>
+            <openingTime>
+                <hour>7</hour>
+                <minute>45</minute>
+            </openingTime>
+            <closingTime>
+                <hour>20</hour>
+                <minute>15</minute>
+            </closingTime>
+        </workingTime>
+        <email>corkcity@rental.ie</email>
+        <Stock>
+            <capacity>120</capacity>
+            <spaceLeft>45</spaceLeft>
+        </Stock>
+        <Address>
+            <street>1 South Mall</street>
+            <city>Cork</city>
+            <county>Cork</county>
+            <country>Ireland</country>
+            <postalCode>T12KX8D</postalCode>
+        </Address>
+    </rentalCenter>
+    <rentalCenter id="LimerickCentral">
+        <full>True</full>
+        <workingTime>
+            <openingTime>
+                <hour>8</hour>
+                <minute>00</minute>
+            </openingTime>
+            <closingTime>
+                <hour>19</hour>
+                <minute>00</minute>
+            </closingTime>
+        </workingTime>
+        <email>limerickcentral@rental.ie</email>
+        <Stock>
+            <capacity>135</capacity>
+            <spaceLeft>0</spaceLeft>
+        </Stock>
+        <Address>
+            <street>52 O'Connell Street</street>
+            <city>Limerick</city>
+            <county>Limerick</county>
+            <country>Ireland</country>
+            <postalCode>V94E4X2</postalCode>
+        </Address>
+    </rentalCenter>
+    <rentalCenter id="GalwayBay">
+        <full>False</full>
+        <workingTime>
+            <openingTime>
+                <hour>9</hour>
+                <minute>30</minute>
+            </openingTime>
+            <closingTime>
+                <hour>18</hour>
+                <minute>45</minute>
+            </closingTime>
+        </workingTime>
+        <email>galwaybay@rental.ie</email>
+        <Stock>
+            <capacity>110</capacity>
+            <spaceLeft>65</spaceLeft>
+        </Stock>
+        <Address>
+            <street>27 Eyre Square</street>
+            <city>Galway</city>
+            <county>Galway</county>
+            <country>Ireland</country>
+            <postalCode>H91T8NW</postalCode>
+        </Address>
+    </rentalCenter>
 </rentalCenterDB>
