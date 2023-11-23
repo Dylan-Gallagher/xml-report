@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE rentalCenterDB [
 <!ELEMENT rentalCenterDB (rentalCenter*)>
-<!ELEMENT rentalCenter (full, workingTime, email, Stock, Address)>
+<!ELEMENT rentalCenter (location, full, workingTime, email, Stock, Address)>
+<!ELEMENT location (#PCDATA)>
+
 
 <!ELEMENT full (#PCDATA)>
 
@@ -28,7 +30,8 @@
 ]>
 
 <rentalCenterDB>
-    <rentalCenter id="BaggotStreet">
+    <rentalCenter id="1283665712">
+        <location>Baggot Street</location>
         <full>False</full>
         <workingTime>
             <openingTime>
@@ -53,7 +56,8 @@
             <postalCode>D04YY05</postalCode>
         </Address>
     </rentalCenter>
-    <rentalCenter id="StPancras">
+    <rentalCenter id="9427667182">
+        <location>St Pancras</location>
         <full>True</full>
         <workingTime>
             <openingTime>
@@ -77,7 +81,8 @@
             <postalCode>N1C4QP</postalCode>
         </Address>
     </rentalCenter>
-    <rentalCenter id="GareDuNord">
+    <rentalCenter id="286419263">
+        <location>Gare Du Nord</location>
         <full>False</full>
         <workingTime>
             <openingTime>
@@ -101,7 +106,8 @@
             <postalCode>75010</postalCode>
         </Address>
     </rentalCenter>
-    <rentalCenter id="CorkCity">
+    <rentalCenter id="4725182">
+        <location>Cork City</location>
         <full>False</full>
         <workingTime>
             <openingTime>
@@ -126,7 +132,8 @@
             <postalCode>T12KX8D</postalCode>
         </Address>
     </rentalCenter>
-    <rentalCenter id="LimerickCentral">
+    <rentalCenter id="83461262">
+        <location>Limerick Central</location>
         <full>True</full>
         <workingTime>
             <openingTime>
@@ -151,7 +158,8 @@
             <postalCode>V94E4X2</postalCode>
         </Address>
     </rentalCenter>
-    <rentalCenter id="GalwayBay">
+    <rentalCenter id="12938712876">
+        <location>Galway Bay</location>
         <full>False</full>
         <workingTime>
             <openingTime>
@@ -172,6 +180,32 @@
             <street>27 Eyre Square</street>
             <city>Galway</city>
             <county>Galway</county>
+            <country>Ireland</country>
+            <postalCode>H91T8NW</postalCode>
+        </Address>
+    </rentalCenter>
+    <rentalCenter id="12783612675">
+        <location>Dublin Airport</location>
+        <full>False</full>
+        <workingTime>
+            <openingTime>
+                <hour>00</hour>
+                <minute>00</minute>
+            </openingTime>
+            <closingTime>
+                <hour>00</hour>
+                <minute>00</minute>
+            </closingTime>
+        </workingTime>
+        <email>dublinairport@rental.ie</email>
+        <Stock>
+            <capacity>250</capacity>
+            <spaceLeft>204</spaceLeft>
+        </Stock>
+        <Address>
+            <street>Dublin Airport Arrivals</street>
+            <city>Dublin</city>
+            <county>Dublin</county>
             <country>Ireland</country>
             <postalCode>H91T8NW</postalCode>
         </Address>

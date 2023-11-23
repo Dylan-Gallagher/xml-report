@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE bookings [
+    <!ELEMENT bookings (booking*)>
+    <!ELEMENT booking (rentalCenter, date, Car)>
+    <!ATTLIST booking bookingReference CDATA #REQUIRED>
+    <!ELEMENT Car (VIN)>
+    <!ELEMENT VIN (#PCDATA)>
+
+    <!ELEMENT rentalCenter (location)>
+    <!ELEMENT location (#PCDATA)>
+
+    <!ELEMENT date (#PCDATA)>
+    <!ELEMENT carModel (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+
+  ]>
+<bookings>
+    <booking bookingReference="1234455667">
+        <rentalCenter>
+            <location>Dublin Airport</location>
+        </rentalCenter>
+        <date>"27/11/23"</date>
+        <Car><VIN>3C4PDCAB1ET168244</VIN></Car>
+    </booking>
+</bookings>

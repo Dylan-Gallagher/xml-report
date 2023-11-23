@@ -1,6 +1,9 @@
-<!DOCTYPE Payment [
+<?xml version="1.0"?>
+<!DOCTYPE carPayment [
+    <!ELEMENT carPayment (Payment*)>
     <!ELEMENT Payment (card, cardholder)>
     <!ATTLIST cardholder image CDATA #REQUIRED>
+    <!ATTLIST Payment paymentID CDATA #REQUIRED>
     <!ATTLIST cardholder thirdPartyPaymentSuccess (True|False) #REQUIRED>
 
     <!ELEMENT name (#PCDATA)>
@@ -8,10 +11,20 @@
     <!ELEMENT address (#PCDATA)>
 ]>
 
-<Payment>
-    <card image="bGlnaHQgdw==" thirdPartyPaymentSuccess="True"/>
-    <cardholder>
+<carPayment>
+  <Payment paymentID="1">
+    <card image="utsrtatsiydtiouw=="/>
+    <cardholder thirdPartyPaymentSuccess="True">
         <name>bGlnaHQgdw==</name>
         <address>1 Grafton Street, Dublin 2</address>
     </cardholder>
-</Payment>
+    </Payment>
+    
+  <Payment>
+    <card image="utsrtatugiegtntsiydtiouw=="/>
+    <cardholder thirdPartyPaymentSuccess="True">
+        <name>bGlnadewdedwaedHQgdw==</name>
+        <address>1 O'Connell Street, Dublin 2</address>
+    </cardholder>
+    </Payment>
+</carPayment>
