@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE Cars [ <!ELEMENT Cars (Car)*>
-<!ELEMENT Car (VIN ,Type, Brand, Model, Year, Mileage, Transmission, Price, Reserved)>
-<!ELEMENT VIN (#PCDATA)>
+<!ELEMENT Car (Type, Brand, Model, Year, Mileage, Transmission, Price, Reserved)>
+<!ATTLIST Car VIN CDATA #REQUIRED>
 <!ELEMENT Type (#PCDATA)>
 <!ELEMENT Brand (#PCDATA)>
 <!ELEMENT Model (#PCDATA)>
@@ -11,13 +11,10 @@
 <!ELEMENT Transmission (#PCDATA)>
 <!ELEMENT Reserved (#PCDATA)>
 <!ELEMENT Price (#PCDATA)>
-
-<!ATTLIST Employee Employee_Number CDATA #REQUIRED>
 ]>
 
 <Cars> 
-    <Car >
-        <VIN>3C4PDCAB1ET168244</VIN>
+    <Car VIN = "3C4PDCAB1ET168244">
         <Type>SUV</Type>
         <Brand>Toyota</Brand>
         <Model>Rav4</Model>
@@ -25,10 +22,9 @@
         <Mileage>50234</Mileage>
         <Transmission>automatic</Transmission>
         <Price>50</Price>
-        <Reserved>false</Reserved>
+        <Reserved>true</Reserved>
     </Car>
-    <Car>
-        <VIN>1GHDT13W6Y2309402</VIN>
+    <Car VIN = "1GHDT13W6Y2309402">
         <Type>Sedan</Type>
         <Brand>Chery</Brand>
         <Model>Arrizo 8</Model>
@@ -38,8 +34,7 @@
         <Price>43</Price>
         <Reserved>false</Reserved>
     </Car>
-    <Car>
-        <VIN>JF1GG68564H800943</VIN>
+    <Car VIN = "JF1GG68564H800943">
         <Type>SUV</Type>
         <Brand>Land Rover</Brand>
         <Model>Range Rover Sport</Model>
@@ -47,11 +42,10 @@
         <Mileage>23444</Mileage>
         <Transmission>automatic</Transmission>
         <Price>77</Price>
-        <Reserved>false</Reserved>
+        <Reserved>true</Reserved>
     </Car>
 
-    <Car> 
-        <VIN>5TDZA23C34S061366</VIN>
+    <Car VIN = "5TDZA23C34S061366"> 
         <Type>Hatchback</Type>
         <Brand>Volkswagen</Brand>
         <Model>Golf</Model>
@@ -61,9 +55,8 @@
         <Price>50</Price>
         <Reserved>false</Reserved> 
     </Car>
-    <Car> 
-        <VIN>1LNHM84W03Y636990</VIN>
-        <Type>Ð¡abriolet</Type>
+    <Car VIN = "1LNHM84W03Y636990"> 
+        <Type>Cabriolet</Type>
         <Brand>Mercedes-Benz</Brand>
         <Model>SL</Model>
         <Year>2008</Year>
@@ -72,6 +65,4 @@
         <Price>102</Price>
         <Reserved>true</Reserved>
     </Car>
-
-
 </Cars>

@@ -2,14 +2,18 @@
 
 <!DOCTYPE bookings [
     <!ELEMENT bookings (booking*)>
-    <!ELEMENT booking (rentalCenter, date, Car)>
+    <!ELEMENT booking (rentalCenter, date, Car, Driver, payment, AddOn)>
+    <!ELEMENT payment EMPTY>
+    <!ELEMENT AddOn EMPTY>
+    <!ATTLIST AddOn id CDATA #REQUIRED>
+    <!ATTLIST payment paymentID CDATA #REQUIRED>
+    <!ELEMENT Driver EMPTY>
+    <!ATTLIST Driver ID CDATA #REQUIRED>
     <!ATTLIST booking bookingReference CDATA #REQUIRED>
-    <!ELEMENT Car (VIN)>
-    <!ELEMENT VIN (#PCDATA)>
-
-    <!ELEMENT rentalCenter (location)>
-    <!ELEMENT location (#PCDATA)>
-
+    <!ELEMENT Car EMPTY>
+    <!ATTLIST Car VIN CDATA #REQUIRED>
+    <!ATTLIST rentalCenter id CDATA #REQUIRED>
+    <!ELEMENT rentalCenter EMPTY>
     <!ELEMENT date (#PCDATA)>
     <!ELEMENT carModel (#PCDATA)>
     <!ELEMENT price (#PCDATA)>
@@ -17,10 +21,27 @@
   ]>
 <bookings>
     <booking bookingReference="1234455667">
-        <rentalCenter>
-            <location>Dublin Airport</location>
-        </rentalCenter>
+        <rentalCenter id="1283665712"></rentalCenter>
         <date>"27/11/23"</date>
-        <Car><VIN>3C4PDCAB1ET168244</VIN></Car>
+        <Car VIN="JF1GG68564H800943"></Car>
+        <Driver ID="22337295" />
+        <payment paymentID="1" />
+        <AddOn id="2873167253" />
+    </booking>
+    <booking bookingReference="72517232">
+        <rentalCenter id="286419263"></rentalCenter>
+        <date>"01/03/23"</date>
+        <Car VIN="1LNHM84W03Y636990"></Car>
+        <Driver ID="82361623" />
+        <payment paymentID="3" />
+        <AddOn id="276316283" />
+    </booking>
+    <booking bookingReference="2712353">
+        <rentalCenter id="9427667182"></rentalCenter>
+        <date>"23/05/23"</date>
+        <Car VIN="3C4PDCAB1ET168244"></Car>
+        <Driver ID="2381232" />
+        <payment paymentID="2" />
+        <AddOn id="293712634" />
     </booking>
 </bookings>

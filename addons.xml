@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+    <!DOCTYPE CarAddOns [
+        <!ELEMENT CarAddOns (AddOns*)>
+        <!ELEMENT AddOns (insurance, theftProtection, fullTank,price)>
+        <!ATTLIST AddOns id CDATA #REQUIRED>
+        <!ELEMENT insurance (extraInsurance, driversInsurance)>
+        <!ELEMENT extraInsurance (#PCDATA)>
+        <!ELEMENT driversInsurance (#PCDATA)>
+        <!ELEMENT theftProtection (#PCDATA)>
+        <!ELEMENT fullTank (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+    ]>
+
+    <CarAddOns>
+        <AddOns id="2873167253">
+            <insurance>
+                <extraInsurance>True</extraInsurance>
+                <driversInsurance>False</driversInsurance>
+            </insurance>
+            <theftProtection>True</theftProtection>
+            <fullTank>False</fullTank>
+            <price>200</price>
+        </AddOns>
+        <AddOns id="276316283">
+            <insurance>
+                <extraInsurance>False</extraInsurance>
+                <driversInsurance>False</driversInsurance>
+            </insurance>
+            <theftProtection>True</theftProtection>
+            <fullTank>False</fullTank>
+            <price>300</price>
+        </AddOns>
+        <AddOns id="293712634">
+            <insurance>
+                <extraInsurance>True</extraInsurance>
+                <driversInsurance>True</driversInsurance>
+            </insurance>
+            <theftProtection>True</theftProtection>
+            <fullTank>True</fullTank>
+            <price>100</price>
+        </AddOns>
+    </CarAddOns>

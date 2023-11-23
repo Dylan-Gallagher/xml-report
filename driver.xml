@@ -31,4 +31,28 @@
         </contactInfo>
         <age>33</age>
     </Driver_Registration>
+    <Driver_Registration ID="82361623" isVerified="Y">
+        <name>
+            <title>Mrs</title>
+            <firstname>Mary</firstname>
+            <surname>Patterson</surname>
+        </name>
+        <contactInfo>
+            <PhoneNo>852735288</PhoneNo>
+            <email>mpatt21@gmail.com</email>
+        </contactInfo>
+        <age>54</age>
+    </Driver_Registration>
+    <Driver_Registration ID="2381232" isVerified="Y">
+        <name>
+            <title>Mr</title>
+            <firstname>Gary</firstname>
+            <surname>Murphy</surname>
+        </name>
+        <contactInfo>
+            <PhoneNo>0912316252</PhoneNo>
+            <email>thegmurph@gmail.com</email>
+        </contactInfo>
+        <age>26</age>
+    </Driver_Registration>
 </Driver>

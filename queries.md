@@ -10,3 +10,6 @@
 
 ## Example Queries
 1. Get a list of all bookings at a specific rental centre
+
+
+
