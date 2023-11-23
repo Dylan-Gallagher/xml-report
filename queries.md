@@ -11,6 +11,8 @@
 ## Example Queries
 1. Get a list of all bookings at each rental center
 2. Get a list of all rental centers in Ireland that open before 9am, ordered by opening time (earliest-latest), along with the actual time they open
-3. 
+3. Display the price of cars rented out at each rental center
+4. [TODO] Calculate Insurance (based on age)
+
 
 
