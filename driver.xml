@@ -1,6 +1,7 @@
 <!DOCTYPE Driver [
     <!ELEMENT Driver (Driver_Registration*)>
-    <!ELEMENT Driver_Registration (name, contactInfo, age)>
+    <!ELEMENT Driver_Registration (orderNumber, name, contactInfo, age)>
+    <!ELEMENT orderNumber (#PCDATA)>
     <!ATTLIST Driver_Registration ID CDATA #REQUIRED>
     <!ATTLIST Driver_Registration isVerified (Y|N) #REQUIRED>
     <!ATTLIST Driver_Registration gender (M|F|other) #IMPLIED>
@@ -20,6 +21,7 @@
 
 <Driver>
     <Driver_Registration ID="22337295" isVerified="Y">
+        <orderNumber>1234</orderNumber>
         <name>
             <title>Mr</title>
             <firstname>John</firstname>
@@ -32,6 +34,7 @@
         <age>33</age>
     </Driver_Registration>
     <Driver_Registration ID="82361623" isVerified="Y">
+        <orderNumber>2345</orderNumber>
         <name>
             <title>Mrs</title>
             <firstname>Mary</firstname>
@@ -44,6 +47,7 @@
         <age>54</age>
     </Driver_Registration>
     <Driver_Registration ID="2381232" isVerified="Y">
+        <orderNumber>3456</orderNumber>
         <name>
             <title>Mr</title>
             <firstname>Gary</firstname>
