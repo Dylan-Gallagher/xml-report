@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <!DOCTYPE rentalCenterDB [
+<!-- Outer Class for grouping rental centers -->
 <!ELEMENT rentalCenterDB (rentalCenter*)>
 <!ELEMENT rentalCenter (location, full, workingTime, email, Stock, Address)>
+<!-- Name of location of rental center -->
 <!ELEMENT location (#PCDATA)>
-
-
+<!-- Whether or not the rental center is full, i.e. if it has cars available -->
 <!ELEMENT full (#PCDATA)>
 
+<!-- Working hours of rental center -->
 <!ELEMENT workingTime (openingTime, closingTime)>
 <!ELEMENT openingTime (hour, minute)>
 <!ELEMENT closingTime (hour, minute)>
@@ -15,10 +17,12 @@
 
 <!ELEMENT email (#PCDATA)>
 
+<!-- Stock of the rental center, i.e. how many cars left -->
 <!ELEMENT Stock (capacity, spaceLeft)>
 <!ELEMENT capacity (#PCDATA)>
 <!ELEMENT spaceLeft (#PCDATA)>
 
+<!-- Address of the rental center -->
 <!ELEMENT Address (street, city, county?, country, postalCode)>
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT city (#PCDATA)>
@@ -26,10 +30,12 @@
 <!ELEMENT country (#PCDATA)>
 <!ELEMENT postalCode (#PCDATA)>
 
+<!-- Unique identifier for the rental center so it can be linked with other entities of different classes -->
 <!ATTLIST rentalCenter id CDATA #REQUIRED>
 ]>
 
 <rentalCenterDB>
+    <!-- Baggot Street Rental Center -->
     <rentalCenter id="1283665712">
         <location>Baggot Street</location>
         <full>False</full>
@@ -56,6 +62,8 @@
             <postalCode>D04YY05</postalCode>
         </Address>
     </rentalCenter>
+
+    <!-- St. Pancras (London) Rental Center -->
     <rentalCenter id="9427667182">
         <location>St Pancras</location>
         <full>True</full>
@@ -81,6 +89,8 @@
             <postalCode>N1C4QP</postalCode>
         </Address>
     </rentalCenter>
+
+    <!-- Gare Du Nord (Paris) Rental Center -->
     <rentalCenter id="286419263">
         <location>Gare Du Nord</location>
         <full>False</full>
@@ -106,6 +116,8 @@
             <postalCode>75010</postalCode>
         </Address>
     </rentalCenter>
+
+    <!-- Cork City Rental Center -->
     <rentalCenter id="4725182">
         <location>Cork City</location>
         <full>False</full>
@@ -132,6 +144,8 @@
             <postalCode>T12KX8D</postalCode>
         </Address>
     </rentalCenter>
+
+    <!-- Limerick Central Rental Center -->
     <rentalCenter id="83461262">
         <location>Limerick Central</location>
         <full>True</full>
@@ -158,6 +172,8 @@
             <postalCode>V94E4X2</postalCode>
         </Address>
     </rentalCenter>
+
+    <!-- Galway Bay Rental Center -->
     <rentalCenter id="12938712876">
         <location>Galway Bay</location>
         <full>False</full>
@@ -184,6 +200,8 @@
             <postalCode>H91T8NW</postalCode>
         </Address>
     </rentalCenter>
+
+    <!-- Dublin Airport Rental Center -->
     <rentalCenter id="12783612675">
         <location>Dublin Airport</location>
         <full>False</full>
